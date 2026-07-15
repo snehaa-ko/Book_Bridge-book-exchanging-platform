@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1fffb;
+}
+
+.header {
+    background: #2e7d32;
+    color: white;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.container {
+    padding: 40px;
+}
+
+#bookDetails {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+#bookDetails img {
+    width: 220px;
+    border-radius: 10px;
+}
+
+.book-info {
+    flex: 1;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row .card {
+    flex: 1;
+}
+
+.comment-input-box {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#commentInput {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#commentsList {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.comment {
+    background: #fff;
+    border-left: 4px solid #2e7d32;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.replies {
+    margin-left: 20px;
+    border-left: 2px dashed #ccc;
+    padding-left: 10px;
+}
+
+#stars span {
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+#stars span.active {
+    opacity: 1;
+}
+
+button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5e20;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Details</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/book.css">
+</head>
+
+<body>
+<div class="header">
+    <h2>Book Details</h2>
+    <div>
+        <span id="userName"></span>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="hero">
+    <img id="heroImage">
+</div>
+
+<div class="container">
+<div id="bookDetails"></div>
+
+<div class="card">
+    <h3>Description</h3>
+    <p id="descText"></p>
+</div>
+
+<div class="row">
+    <div class="card" id="ratingSection">
+        <h3>Rating</h3>
+        <div id="stars">
+            <span onclick="rate(1)">⭐</span>
+            <span onclick="rate(2)">⭐</span>
+            <span onclick="rate(3)">⭐</span>
+            <span onclick="rate(4)">⭐</span>
+            <span onclick="rate(5)">⭐</span>
+        </div>
+        <p id="avgRating">Average Rating: 0</p>
+    </div>
+    <div class="card">
+        <h3>Seller Info</h3>
+        <p id="sellerInfo"></p>
+    </div>
+</div>
+
+<div class="card">
+    <h3>Review</h3>
+    <div class="comment-input-box">
+        <input type="text" id="commentInput" placeholder="Write a comment...">
+        <button onclick="addComment()">Post</button>
+    </div>
+    <div id="commentsList"></div>
+</div>
+</div>
+
+<script src="js/book.js" defer></script>
+
+</body>
+</html>

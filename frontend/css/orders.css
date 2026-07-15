@@ -1,0 +1,45 @@
+.status-pending{
+    background: #fff3cd;
+    color: #856404;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.status-delivered{
+    background: #d4edda;
+    color: #155724;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.status-cancelled{
+    background: #f8d7da;
+    color: #721c24;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.horizontal-orders {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.vertical-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.horizontal-orders::-webkit-scrollbar {
+    height: 6px;
+}
+.horizontal-orders::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}

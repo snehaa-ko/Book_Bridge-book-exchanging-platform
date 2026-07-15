@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Book Bridge</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="menu-btn" onclick="toggleMenu()">⋮</div>
+<div id="sideMenu" class="side-menu">
+    <div class="menu-header">
+        <h3 id="menuUserName">User</h3>
+        <p>Welcome back</p>
+    </div>
+    <hr>
+    <a onclick="goTo('books')">My Books</a>
+    <a onclick="goTo('cart')">View Cart</a>
+    <a onclick="goTo('orders')">Orders</a>
+    <hr>
+    <button onclick="document.getElementById('updateForm').style.display='flex'">
+        Update Profile
+    </button>
+    <form id="updateForm" onsubmit="updateUser(event)" style="display:none; flex-direction:column; gap:8px; margin-top:10px;">
+        <input type="text" id="newUsername" placeholder="New Username">
+        <input type="password" id="newPassword" placeholder="New Password">
+        <button type="submit">Update</button>
+    </form>
+    <hr>
+    <button onclick="deleteUser()" style="background:red;">
+        Delete Account
+    </button>
+    <a onclick="logout()">Logout</a>
+</div>
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<header>
+    <h1>Book Bridge</h1>
+    <input type="text" id="search" placeholder="Search books by title or author...">
+    <div class="nav-right">
+        <span id="userName"></span>
+        <a href="add.html" class="btn">+ Add Book</a>
+    </div>
+</header>
+
+<button onclick="loadBooks()">All Books</button>
+<button onclick="window.location.href='cart.html'">
+    View Cart (<span id="cart-count">0</span>)
+</button>
+<button onclick="window.location.href='orders.html'">Orders</button>
+
+<main id="books-container">
+    <p>Loading books...</p>
+</main>
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

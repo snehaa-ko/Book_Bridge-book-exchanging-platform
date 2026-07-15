@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Cart - Book Bridge</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+<div class="header">
+    <h2>My Cart</h2>
+    <button onclick="goBack()">Back</button>
+</div>
+
+<div class="container">
+    <div id="cartItems" class="cart-grid"></div>
+    <div class="total-box" id="totalBox">
+        Total: ₹0
+    </div>
+    <button class="checkout-btn" onclick="checkout()">
+        Place Order
+    </button>
+</div>
+
+<script src="js/cart.js"></script>
+
+<script>
+function goBack(){
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

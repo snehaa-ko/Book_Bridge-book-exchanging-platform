@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard - Book Bridge</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+<div class="header">
+<h1>Book Bridge Admin</h1>
+</div>
+
+<div class="navbar">
+    <a onclick="goHome()">Home</a>
+    <a onclick="showSection('users')">Users</a>
+    <a onclick="showSection('books')">Books</a>
+    <a onclick="showSection('orders')">Orders</a>
+    <a onclick="logout()">Logout</a>
+</div>
+
+<div class="hero">
+<h2 id="adminName"></h2>
+
+<div class="stats">
+<div class="stat-card" id="userCount"></div>
+<div class="stat-card" id="bookCount"></div>
+</div>
+</div>
+
+<div id="controls-wrapper">
+    <div id="user-controls" class="controls">
+        <input type="text" id="searchUser" placeholder="Search Users">
+        <select id="filterRole">
+            <option value="">All Roles</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+    </div>
+
+    <div id="book-controls" class="controls">
+        <input type="text" id="searchBook" placeholder="Search Books">
+        <select id="filterCategory">
+                <option>All Categories</option>
+                <option>Fantasy</option>
+                <option>Romance</option>
+                <option>Thriller</option>
+                <option>Action</option>
+                <option>Self-help</option>
+                <option>Slice of Life</option>
+                <option>History</option>
+                <option>Science</option>
+                <option>Math</option>
+        </select>
+    </div>
+</div>
+
+<div id="users-section" class="section">
+<h2>Users</h2>
+<div id="users" class="grid"></div>
+</div>
+
+<div id="books-section" class="section">
+<h2>Books</h2>
+<div id="books" class="grid"></div>
+</div>
+
+<div id="orders-section" class="section">
+<h2>Orders</h2>
+<div id="orders-container" class="grid"></div>
+</div>
+
+<div class="footer">
+© 2026 Book Bridge Admin
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookWorld - Landing Page</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    perspective: 1500px;
+}
+body {
+    margin: 0;
+}
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    position: relative;
+}
+.page-wrapper::before {
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+.page-wrapper.flip {
+    transform: rotateY(-180deg);
+}
+.front-page {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    padding: 50px 40px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #fdfdfd, #e6e6e6);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 60px rgba(255,255,255,0.2) inset;
+    text-align: center;
+    animation: float 2s ease-in-out infinite alternate;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+@keyframes float {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(-40px); }
+}
+.front-page h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.front-page p {
+    font-size: 1.1em;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.front-page a {
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(255,126,95,0.5);
+}
+.front-page a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 30px rgba(255,126,95,0.7), 0 0 20px rgba(255,255,255,0.4) inset;
+}
+.front-page::before,
+.front-page::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+}
+.front-page::before {
+    left: -20px;
+    background: linear-gradient(to bottom, #d4b483, #bfa06f);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.front-page::after {
+    right: -20px;
+    background: linear-gradient(to bottom, #d4b483, #bfa06f);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+<div class="page-wrapper" id="pageWrapper">
+    <div class="front-page">
+        <h1>BookBridge</h1>
+        <p>
+            Step into BookBridge! Discover and manage your favorite books, track your reading journey,and explore an organized library all in one place. Click below to begin your adventure.
+        </p>
+        <a href="#" id="enterBtn">Enter App</a>
+    </div>
+</div>
+<script>
+const btn = document.getElementById('enterBtn');
+const pageWrapper = document.getElementById('pageWrapper');
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    pageWrapper.classList.add('flip');
+    setTimeout(() => {
+        window.location.href = 'login.html';
+    }, 1000);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Book</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/add.css">
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Add New Book</h1>
+    <p>List your book for the community</p>
+</div>
+
+<div class="container">
+<div class="card">
+  <form id="addBookForm" enctype="multipart/form-data">
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Book Title</label>
+        <input id="title" name="title" placeholder="Enter title">
+      </div>
+      <div class="form-group">
+        <label>Author</label>
+        <input id="author" name="author" placeholder="Enter author">
+      </div>
+      <div class="form-group">
+        <label>Price (₹)</label>
+        <input type="number" id="price" name="price" placeholder="Enter price">
+      </div>
+      <div class="form-group">
+        <label>Condition</label>
+        <select id="condition_text" name="condition_text">
+          <option value="New">New</option>
+          <option value="Like New">Like New</option>
+          <option value="Good">Good</option>
+          <option value="Fair">Fair</option>
+          <option value="Poor">Poor</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Category</label>
+        <select id="category" name="category">
+          <option value="Fantasy">Fantasy</option>
+          <option value="Romance">Romance</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Action">Action</option>
+          <option value="Self-help">Self-help</option>
+          <option value="Slice of Life">Slice of Life</option>
+          <option value="History">History</option>
+          <option value="Science">Science</option>
+          <option value="Math">Math</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label>Description</label>
+        <textarea id="description" name="description" placeholder="Write about the book..."></textarea>
+      </div>
+    </div>
+    <div class="image-section">
+      <label>Upload Book Image</label>
+      <input type="file" id="imageInput" name="image" accept="image/*">
+      <img id="preview">
+    </div>
+    <div class="button-box">
+      <button type="button" onclick="addBook()">Add Book</button>
+    </div>
+  </form>
+</div>
+</div>
+
+<script src="js/addBook.js"></script>
+
+</body>
+</html>
