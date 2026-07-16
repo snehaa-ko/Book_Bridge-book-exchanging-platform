@@ -1,0 +1,8 @@
+{
+  "name": "bookbridge-root",
+  "version": "1.0.0",
+  "description": "BookBridge Root Configuration",
+  "scripts": {
+    "start": "npm start --prefix backend"
+  }
+}

@@ -1,7 +1,7 @@
 const user = JSON.parse(localStorage.getItem("user"));
 if (!user) window.location.href = "login.html";
 
-const API = "http://127.0.0.1:5000";
+const API = API_BASE_URL;
 let cartData = [];
 
 async function loadCart() {

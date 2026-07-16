@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const uploadFolder = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadFolder)) fs.mkdirSync(uploadFolder);
 

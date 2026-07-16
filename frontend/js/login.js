@@ -1,7 +1,7 @@
 const form    = document.getElementById("loginForm");
 const toggle  = document.getElementById("toggleMode");
 const roleBox = document.querySelector(".role-switch");
-const API     = "http://127.0.0.1:5000/users";
+const API     = `${API_BASE_URL}/users`;
 
 let isLogin = true;
 let selectedRole = "user";

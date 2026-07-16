@@ -7,7 +7,7 @@ if (!user) window.location.href = "login.html";
 
 document.getElementById("userName").innerText = "Hi, " + user.username;
 
-const API_BASE     = "http://127.0.0.1:5000";
+const API_BASE     = API_BASE_URL;
 const API_BOOKS    = `${API_BASE}/books`;
 const API_COMMENTS = `${API_BASE}/comments`;
 const API_RATINGS  = `${API_BASE}/ratings`;

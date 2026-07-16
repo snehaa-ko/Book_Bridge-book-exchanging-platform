@@ -3,7 +3,7 @@ if (!user || user.role !== "admin") window.location.href = "index.html";
 
 document.getElementById("adminName").innerText = "Admin: " + (user.username || "Unknown");
 
-const API = "http://127.0.0.1:5000";
+const API = API_BASE_URL;
 let allUsers = [], allBooks = [], allOrders = [];
 
 async function loadData() {

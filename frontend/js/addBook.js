@@ -1,7 +1,7 @@
 const user = JSON.parse(localStorage.getItem("user"));
 if (!user) window.location.href = "login.html";
 
-const API_BOOKS = "http://127.0.0.1:5000/books";
+const API_BOOKS = `${API_BASE_URL}/books`;
 
 const fields = {
     title: document.getElementById("title"),
