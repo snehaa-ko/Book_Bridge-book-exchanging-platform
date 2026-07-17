@@ -17,8 +17,8 @@ https://github.com/yourusername/BookBridge
 ## 🚀 Features
 
 ### 👤 User Management
-- User registration and authentication
-- Secure login functionality
+- User registration 
+- User login
 - User-specific book management
 
 ### 📖 Book Management
