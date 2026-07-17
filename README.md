@@ -66,18 +66,17 @@ https://github.com/yourusername/BookBridge
 
 # 🏗️ Application Architecture
 User
-|
-|
-React.js Frontend
-|
-|
-REST APIs
-|
-|
-Node.js + Express.js Backend
-|
-|
-MySQL Database
+ |
+Vercel
+(React.js Frontend)
+ |
+REST API Requests
+ |
+Render
+(Node.js + Express Backend)
+ |
+Clever Cloud
+(MySQL Database)
 
 
 ---
