@@ -4,6 +4,14 @@ BookBridge is a full-stack web application that provides a platform for users to
 
 The project focuses on implementing real-world full-stack development concepts including frontend development, REST API design, database management, authentication, and cloud deployment.
 
+## 🔗 Links
+
+🚀 Live Demo:
+https://book-bridge-book-exchanging-platfor-bay.vercel.app
+
+💻 GitHub Repository:
+https://github.com/yourusername/BookBridge
+
 ---
 
 ## 🚀 Features
