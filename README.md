@@ -109,3 +109,20 @@ BookBridge
 
 ```bash
 git clone https://github.com/yourusername/BookBridge.git
+
+## Backend Setup
+
+cd backend
+
+npm install
+
+npm start
+
+
+## Frontend Setup
+
+cd frontend
+
+npm install
+
+npm start
