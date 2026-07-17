@@ -57,3 +57,47 @@ The project focuses on implementing real-world full-stack development concepts i
 ---
 
 # 🏗️ Application Architecture
+User
+|
+|
+React.js Frontend
+|
+|
+REST APIs
+|
+|
+Node.js + Express.js Backend
+|
+|
+MySQL Database
+
+
+---
+
+# 📂 Project Structure
+
+
+BookBridge
+│
+├── frontend
+│ ├── src
+│ ├── components
+│ └── pages
+│
+├── backend
+│ ├── routes
+│ ├── controllers
+│ ├── database
+│ └── server.js
+│
+└── README.md
+
+
+---
+
+# ⚙️ Installation & Setup
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/BookBridge.git
